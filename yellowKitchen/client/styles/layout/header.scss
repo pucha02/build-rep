@@ -1,0 +1,176 @@
+.header {
+  background: #ffffff;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+
+  color: rgb(144, 147, 166);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(212, 215, 230);
+  &__logo {
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__logo:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.04) rotate(4deg);
+  }
+  &__container {
+    max-width: 1255px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    &__login {
+      cursor: pointer;
+    }
+    &__login:hover {
+      transform: scale(1.02);
+    }
+    &__login,
+    &__cart,
+    &__burger {
+      margin-right: 50px;
+      display: flex;
+      align-items: flex-start;
+    }
+    &__burger {
+      margin-right: 0;
+    }
+  }
+}
+.logo {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.burger {
+  width: 30px; /* Было 60px */
+  height: 22.5px; /* Было 45px */
+  position: relative;
+  margin: 15px auto; /* Было 30px */
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3.5px; /* Было 9px */
+  width: 50%; /* Пропорция сохраняется */
+  background: rgb(144, 147, 166);
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-child(even) {
+  left: 50%; /* Пропорция сохраняется */
+  border-radius: 0 4.5px 4.5px 0; /* Было 9px */
+}
+
+.burger span:nth-child(odd) {
+  left: 0px;
+  border-radius: 4.5px 0 0 4.5px; /* Было 9px */
+}
+
+.burger span:nth-child(1),
+.burger span:nth-child(2) {
+  top: 0px;
+}
+
+.burger span:nth-child(3),
+.burger span:nth-child(4) {
+  top: 9px; /* Было 18px */
+}
+
+.burger span:nth-child(5),
+.burger span:nth-child(6) {
+  top: 18px; /* Было 36px */
+}
+
+/* Стили для открытого состояния */
+.burger--open span:nth-child(1),
+.burger--open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+.burger--open span:nth-child(2),
+.burger--open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+.burger--open span:nth-child(1) {
+  left: 2.5px; /* Было 5px */
+  top: 3.5px; /* Было 7px */
+}
+
+.burger--open span:nth-child(2) {
+  left: calc(50% - 2.5px); /* Было 5px */
+  top: 3.5px; /* Было 7px */
+}
+
+.burger--open span:nth-child(3),
+.burger--open span:nth-child(4) {
+  left: 50%; /* Пропорция сохраняется */
+  opacity: 0;
+}
+
+.burger--open span:nth-child(5) {
+  left: 2.5px; /* Было 5px */
+  top: 14.5px; /* Было 29px */
+}
+
+.burger--open span:nth-child(6) {
+  left: calc(50% - 2.5px); /* Было 5px */
+  top: 14.5px; /* Было 29px */
+}
+
+.burger__menu {
+  z-index: 200;
+  transform: translateX(300px);
+  transition: 0.4s;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 93.5px;
+  background-color: white;
+  padding: 0 36px;
+  &__info {
+    color: rgb(144, 147, 166);
+    font-family: Martel Sans;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px 0;
+    p {
+      margin: 3px;
+    }
+    .burger__menu__title {
+      color: rgb(63, 66, 85);
+      font-family: Martel Sans;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .burger__menu__list {
+    &__item {
+      list-style: none;
+      padding: 22.5px;
+    }
+  }
+}
+.burger__menu.open {
+  transition: 0.4s;
+  transform: translateX(0);
+}
