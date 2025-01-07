@@ -1,0 +1,124 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta with creamy sauce, pancetta, and Parmesan cheese.",
+      "price": 12.99,
+      "category": "Pasta",
+      "image": "/assets/image/products/spaghetti-carbonara.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "description": "Wood-fired pizza topped with fresh tomatoes, mozzarella, and basil.",
+      "price": 10.99,
+      "category": "Pizza",
+      "image": "/assets/image/products/margherita-pizza.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+      "price": 8.99,
+      "category": "Salad",
+      "image": "/assets/image/products/caesar-salad.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Grilled Chicken",
+      "description": "Juicy grilled chicken breast served with roasted vegetables.",
+      "price": 14.99,
+      "category": "Main Course",
+      "image": "/assets/image/products/grilled-chicken.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Tom Yum Soup",
+      "description": "Spicy and sour Thai soup with shrimp, mushrooms, and lemongrass.",
+      "price": 9.99,
+      "category": "Soup",
+      "image": "/assets/image/products/spaghetti-carbonara.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Sushi Platter",
+      "description": "Assorted sushi rolls with fresh fish and vegetables.",
+      "price": 18.99,
+      "category": "Seafood",
+      "image": "/assets/image/products/margherita-pizza.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Beef Steak",
+      "description": "Grilled beef steak cooked to perfection, served with mashed potatoes.",
+      "price": 22.99,
+      "category": "Main Course",
+      "image": "/assets/image/products/caesar-salad.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Lava Cake",
+      "description": "Warm chocolate cake with a gooey center, served with vanilla ice cream.",
+      "price": 6.99,
+      "category": "Dessert",
+      "image": "/assets/image/products/grilled-chicken.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Vegetable Stir-Fry",
+      "description": "Fresh vegetables stir-fried in a savory soy-based sauce.",
+      "price": 11.99,
+      "category": "Vegetarian",
+      "image": "/assets/image/products/spaghetti-carbonara.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Cheeseburger",
+      "description": "Juicy beef patty topped with melted cheese, lettuce, tomato, and onion.",
+      "price": 12.49,
+      "category": "Fast Food",
+      "image": "/assets/image/products/caesar-salad.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta with creamy sauce, pancetta, and Parmesan cheese.",
+      "price": 12.99,
+      "category": "Pasta",
+      "image": "/assets/image/products/spaghetti-carbonara.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Margherita Pizza",
+      "description": "Wood-fired pizza topped with fresh tomatoes, mozzarella, and basil.",
+      "price": 10.99,
+      "category": "Pizza",
+      "image": "/assets/image/products/margherita-pizza.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+      "price": 8.99,
+      "category": "Salad",
+      "image": "/assets/image/products/caesar-salad.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "Grilled Chicken",
+      "description": "Juicy grilled chicken breast served with roasted vegetables.",
+      "price": 14.99,
+      "category": "Main Course",
+      "image": "/assets/image/products/grilled-chicken.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Tom Yum Soup",
+      "description": "Spicy and sour Thai soup with shrimp, mushrooms, and lemongrass.",
+      "price": 9.99,
+      "category": "Soup",
+      "image": "/assets/image/products/spaghetti-carbonara.jpeg"
+    }
+  ]
+}
