@@ -1,0 +1,61 @@
+.info {
+  max-width: 757px;
+  margin: 0 auto;
+  padding: 50px 0;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list__item {
+    list-style: none;
+    text-align: center;
+
+    &__content {
+      cursor: pointer;
+      margin-bottom: 24px;
+      position: relative;
+      width: 127px;
+      height: 127px;
+      border-radius: 50%;
+      color: rgb(63, 66, 85);
+      font-size: 58px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(183, 156, 16);
+
+      span {
+        transform: translateY(10px);
+        transition: 0.4s;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        span {
+          transform: translateY(0);
+          transition: 0.4s;
+        }
+
+        &::after {
+          transition: 0.4s;
+          top: 0;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 23px;
+        z-index: -1;
+        border-radius: 50%;
+        background: rgb(255, 225, 69);
+        width: 126px;
+        height: 126px;
+        transition: top 0.3s ease;
+        transition: 0.4s; // Добавляем плавный переход
+      }
+    }
+  }
+}
